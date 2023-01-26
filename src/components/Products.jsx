@@ -2,7 +2,7 @@ import React, { useEffect, useState } from "react";
 import SingleProduct from "./SingleProduct";
 
 const Products = () => {
-  const [products, setProducts] = useState(null);
+  const [products, setProducts] = useState({});
 
   useEffect(() => {
     fetch("Products.json")
